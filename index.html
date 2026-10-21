@@ -13,18 +13,17 @@
   </style>
 </head>
 <body>
-  <h1>أعضاء الفريق</h1>
+  <h1> Team Members </h1>
   <table>
     <thead><tr><th>#</th><th>الاسم</th><th>ID</th></tr></thead>
     <tbody id="rows"></tbody>
   </table>
 
   <script>
-    // عدّل الأسماء والـ IDs هنا
+    
     const team = [
-      { name: "الاسم الأول",  id: "1001" },
-      { name: "الاسم الثاني", id: "1002" },
-      { name: "الاسم الثالث", id: "1003" },
+      { name: "Nada Ahmed",  id: "20242369" },
+      
     ];
 
     const tbody = document.getElementById("rows");
@@ -32,7 +31,7 @@
       const tr = document.createElement("tr");
       [i + 1, m.name, m.id].forEach(v => {
         const td = document.createElement("td");
-        td.textContent = v;   // textContent بدل innerHTML (أمان)
+        td.textContent = v;       
         tr.appendChild(td);
       });
       tbody.appendChild(tr);
